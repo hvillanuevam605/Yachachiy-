@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bienvenidos</title>
+		<!-- Compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<style>
+			body{
+				background: url(assets/images/login/FONDO.jpg);
+				background-size: cover;
+			}
+
+			.contenedor h5{
+				font-weight: 800;
+			}
+
+			.contenedor{
+				width: 100vw;
+				height: 100vh;
+				text-align: center;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			.contenedor h5{
+				margin-bottom: 10px; 
+			}
+
+			.contenedor p{
+				margin-bottom: 25px;
+				font-size: 17px;
+			}
+
+			.contenedor .botonera{
+				display: flex
+			}
+
+			.contenedor .botonera a{
+				background: linear-gradient(to bottom, #1A8FFB, #0681F1);
+				color: white;
+				font-weight: 600;
+				padding: 10px 20px;
+				border-radius: 5px;
+				box-shadow: 2px 2px 5px rgba(0,0,0,0.5)
+			}
+
+			.contenedor .botonera a:nth-child(2){
+				margin-left: 20px; 
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="contenedor">
+			<h5>¡¡BIENVENIDOS A <br>......................!!</h5>
+			<p>
+				Antes de iniciar con la aventura y el gran<br>
+				mundo de los conocimientos ¿Como desea utilizar (name) en<br>
+				este dispositivo?
+			</p>
+
+			<div class="botonera">
+				<a href="login-docentes.html">DOCENTE</a>
+				<a href="login-estudiantes.html">ESTUDIANTE</a>
+			</div>
+		</div>
+	</body>
+</html>

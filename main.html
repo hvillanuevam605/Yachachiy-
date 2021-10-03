@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<!-- Compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+	
+	    <style>
+	    	body{
+	    		background: url(assets/images/fondo.jpg);
+	    	}
+
+	    	.boton_menu_personalizado{
+	    		width: 40px !important;
+		   		height: 40px !important; 
+		   		display: flex;
+		   		justify-content: center; 
+		   		align-items: center;
+		   		border-radius: 50% !important;
+		   		background: #FFFFFF !important;
+	    	}
+
+	    	.boton_menu_personalizado:hover{
+				background: #E2CBF9 !important;
+	    	}
+
+
+	    	.puntaje{
+				margin-left: 32px;
+				border: 2px solid #FAA515;
+				border-radius: 8px;
+				margin-right: 32px;
+				margin-bottom: 32px;
+				margin-top: 32px;
+				padding-bottom: 10px; 
+			}
+
+			.puntaje h6{
+				text-align: center;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 20px;
+				color: #DD8305;
+				font-weight: 800;
+			}
+
+			.cuadro_puntaje{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+				justify-items: center;
+				align-items: center;
+				margin-right: 32px;
+			}
+
+			.cuadro_puntaje img{
+				width: 70px;
+				grid-row-start: 1;
+				grid-row-end: 3;
+			}
+
+			.cuadro_puntaje h4{
+				margin: 0;
+				width: 100%;
+				text-align: center;
+				font-weight: 800;
+				color: #FC4755;
+			}
+
+			.cuadro_puntaje p{
+				margin: 0;
+				width: 100%;
+				text-align: center;
+				border-top: 1px solid #FC4755;
+				text-transform: uppercase;
+				font-weight: 800;
+				color: #FC4755;
+			}
+	    </style>
+	</head>
+	<body>
+		<nav style="background: #AC69EF">
+			<div class="nav-wrapper" style="display: flex; align-items: center;">
+				<div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+					<a href="#" class="brand-logo" style="opacity: 0">Logo</a>
+					<!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+					<a href="#" data-target="slide-out" class="sidenav-trigger btn boton_menu_personalizado">
+						<i class="material-icons" style="color: #AC69EF">menu</i>
+					</a>
+					
+					<a href="main.html" class="right btn" 
+					   style="
+					   		width: 40px !important;
+					   		height: 40px !important; 
+					   		display: flex;
+					   		justify-content: center; 
+					   		align-items: center;
+					   		border-radius: 50% !important;
+					   		box-shadow: none !important;
+					   		background: #AC69EF !important;
+					">
+						<i class="material-icons">home</i>
+					</a>
+
+					<ul class="right hide-on-med-and-down">
+						<li><a href="sass.html">Sass</a></li>
+						<li><a href="badges.html">Components</a></li>
+						<li><a href="collapsible.html">Javascript</a></li>
+						<li><a href="mobile.html">Mobile</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	  <!-- <ul class="sidenav" id="mobile-demo">
+	    <li><a href="sass.html">Sass</a></li>
+	    <li><a href="badges.html">Components</a></li>
+	    <li><a href="collapsible.html">Javascript</a></li>
+	    <li><a href="mobile.html">Mobile</a></li>
+	  </ul> -->
+
+	  	<ul id="slide-out" class="sidenav">
+	  		<style>
+	  			.cabecera_lista_personalizado{
+	  				background-color: #AC69EF;
+	  				padding-left: 32px;
+	  			}
+
+	  			.cabecera_lista_personalizado h5{
+	  				margin: 0;
+	  				padding: 15px 0px;
+	  				font-weight: 800;
+	  				color: white;
+	  			}
+	  		</style>
+
+	  		<li style="background: #background-color: #AC69EF;">
+	  			<div class="cabecera_lista_personalizado">
+	  				<h5>MI PERFIL</h5>	
+	  			</div>
+  			</li>
+
+		    <li>
+				<div class="user-view" style="display: flex; flex-direction: column; align-items: center;  padding: 30px 0px; margin-bottom: 0">
+					<div class="background">
+						<!-- <img src="assets/images/fondo.jpg"> -->
+					</div>
+
+					<a href="#user" style="display: flex; justify-content: center; align-items: center;">
+						<!-- <img class="circle" style="background: white;" src="assets/images/contento.png"> -->
+						<img style="background: white; width: 50px; height: 50px" src="assets/images/contento.png">
+					</a>
+					<a href="#name">
+						<span class="white-text name" style="color: black !important; font-size: 22px !important; margin-top: 10px !important; margin-bottom: 10px !important">Juanito</span>
+					</a>
+					<a href="#email">
+						<span class="white-text email" style="font-size: 16px !important; background-color: #2CA44E; padding: 5px 12px; display: inline-block; color: white !important; border-radius: 5px;">Estudiante</span>
+					</a>
+				</div>
+			</li>
+
+		    <!-- <li>
+		    	<a href="#!">
+		    		<i class="material-icons">cloud</i>First Link With Icon
+		    	</a>
+		    </li>
+		    <li>
+		    	<a href="#!">Second Link</a>
+		    </li> -->
+		    <li>
+		    	<div class="divider"></div>
+		    </li>
+		    <li style="margin-top: 20px">
+		    	<a class="subheader" style="color: black;">Edad: 10 años</a>
+		    	<a class="subheader" style="color: black;">Colegio: Mayor el Nazareno</a>
+		    	<a class="subheader" style="color: black;">Provincia: Cusco - Perú</a>
+		    </li>
+		    <li>
+		    	<!-- <a class="waves-effect" href="#!">Third Link With Waves</a> -->
+		    	<div class="puntaje">
+		    		<h6>has obtenido</h6>
+
+		    		<div class="cuadro_puntaje">
+		    			<img src="assets/images/medalla.png">
+		    			<h4>150</h4>
+		    			<p>puntos</p>	
+		    		</div>
+		    	</div>
+		    </li>
+  		</ul>
+
+
+
+  		<style>
+  			.contenedor_botones{
+  				min-height: 5vh;
+  				padding: 32px 20px;
+  				grid-gap: 10px;
+  				display: grid;
+  				grid-template-columns: 1fr 1fr 1fr 1fr;
+  				grid-template-rows: 1fr 1fr;
+  			}
+
+  			.tarjeta{
+  				display: flex;
+  				flex-direction: column;
+  				align-items: center;
+  				justify-content: center;
+  			}
+
+  			.tarjeta img{
+  				width: 70px;
+  			}
+
+  			.tarjeta p{
+  				font-weight: 800;
+  				font-size: 18px;
+  				margin: 7px 0px 7px 0px;
+  			}
+  		</style>
+
+
+  		<!-- Cuadro de panel de inicio -->
+  		<div class="contenedor_botones">
+  			<a href="cursos.html" class="tarjeta">
+  				<img src="assets/images/principal/CURSOS.png">
+  				<p style="color: #DF4F75">
+  					CURSOS
+  				</p>
+  			</a>
+
+
+
+  			<a href="practicas.html" class="tarjeta">
+  				<img src="assets/images/principal/CUESTIONARIO.png">
+  				<p style="color: #54E29B">
+  					PRÁCTICAS
+  				</p>
+  			</a>
+
+
+
+  			<a href="lecturas.html" class="tarjeta">
+  				<img src="assets/images/principal/LECTURAS.png">
+  				<p style="color: #FF5824">
+  					LECTURAS
+  				</p>
+  			</a>
+
+
+
+  			<a href="videos.html" class="tarjeta">
+  				<img src="assets/images/principal/video.png">
+  				<p style="color: #09B89D">
+  					VIDEOS
+  				</p>
+  			</a>
+
+
+
+  			<a href="juegos.html" class="tarjeta">
+  				<img src="assets/images/principal/JUEGOS.png">
+  				<p style="color: #16B8FE">
+  					JUEGOS
+  				</p>
+  			</a>
+
+
+
+  			<a href="consultas.html" class="tarjeta">
+  				<img src="assets/images/principal/CONSULTAS.png">
+  				<p style="color: #35538F">
+  					CONSULTAS
+  				</p>
+  			</a>
+
+
+
+  			<a href="soluciones.html" class="tarjeta">
+  				<img src="assets/images/principal/soluciones.png">
+  				<p style="color: #6D68E6">
+  					SOLUCIONES
+  				</p>
+  			</a>
+
+
+  			<a href="ranking.html" class="tarjeta">
+  				<img src="assets/images/principal/ranking.png">
+  				<p style="color: #E91E63">
+  					RANKING
+  				</p>
+  			</a>
+  		</div>
+  		<!-- Cuadro de panel de inicio --> 
+
+
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			    var elems = document.querySelectorAll('.sidenav');
+			    var instances = M.Sidenav.init(elems);
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bienvenidos</title>
+		<!-- Compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<style>
+			body{
+				background: url(assets/images/login/FONDO.jpg);
+				background-size: cover;
+			}
+
+			.contenedor h5{
+				font-weight: 800;
+			}
+
+			.contenedor{
+				width: 100vw;
+				height: 100vh;
+				text-align: center;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			.contenedor .botonera a{
+				background: linear-gradient(to bottom, #1A8FFB, #0681F1);
+				color: white;
+				font-weight: 600;
+				padding: 10px 20px;
+				border-radius: 5px;
+				box-shadow: 2px 2px 5px rgba(0,0,0,0.5)
+			}
+
+			.formulario{
+				width: 80% !important;
+			}
+
+			p{
+				margin: 0;
+				text-align: left;
+			}
+
+			input{
+				border: 1px solid #C4C4C4 !important;
+				font-size: 16px;
+				margin: 0;
+				height: 2rem !important;
+				background: white !important;
+				border-radius: 8px !important;
+				margin-bottom: 10px !important;
+				margin-top: 5px !important;
+				padding: 2px !important; 
+				display: block;  
+			}
+
+			input:focus{
+				box-shadow: none !important;
+			}
+
+			.formulario form{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 0px 20px;
+			}
+
+			.grado{
+				grid-row-start: 4;
+				grid-column-start: 1;
+				grid-column-end: 3;
+
+				display: flex;
+				justify-content: space-around;
+			}
+
+			.grado img{
+				width: 80px;
+			}
+
+			.cuadro_grado{
+				background: #C98DE5;
+				padding: 5px 15px;
+				border-radius: 10px; 
+			}
+
+			.grado div p{
+				margin-top: 10px; 
+				font-weight: 800;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="contenedor">
+			<div class="formulario">
+				<form action="">
+					<div class="campo">
+						<p>Nombres y Apellidos</p>
+						<input type="text">
+					</div>
+
+					<div class="campo">
+						<p>Distrito - provindia - departamento</p>
+						<input type="text">
+					</div>
+
+
+					<div class="campo">
+						<p>D.N.I</p>
+						<input type="text">
+					</div>
+
+
+					<div class="grado">
+						<p>
+					      <label>
+					        <input name="group1" type="radio" checked>
+					        <span>
+					        	<div>
+					        		<div class="cuadro_grado">
+					        			<img src="assets/images/login_estudiantes/chicos_de_1.png">
+					        		</div>
+
+					        		<p>1º y 2º de primaria</p>
+				        		</div>
+					        </span>
+					      </label>
+					    </p>
+
+
+					    <p>
+					      <label>
+					        <input name="group1" type="radio">
+					        <span>
+					        	<div>
+					        		<div class="cuadro_grado">
+					        			<img src="assets/images/login_estudiantes/nino_2.png">
+					        		</div>
+
+					        		<p>3º y 4º de primaria</p>
+				        		</div>
+					        </span>
+					      </label>
+					    </p>
+
+
+					    <p>
+					      <label>
+					        <input name="group1" type="radio">
+					        <span>
+					        	<div>
+					        		<div class="cuadro_grado">
+					        			<img src="assets/images/login_estudiantes/nina_5.png">
+					        		</div>
+
+					        		<p>5º y 6º de primaria</p>
+				        		</div>
+					        </span>
+					      </label>
+					    </p>
+					</div>
+				</form>
+			</div>
+
+			<br>
+
+			<div class="botonera">
+				<a href="main.html" style="display: block">REGISTRARSE</a>
+			</div>
+		</div>
+	</body>
+</html>

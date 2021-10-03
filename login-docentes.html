@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bienvenidos</title>
+		<!-- Compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<style>
+			body{
+				background: url(assets/images/login/FONDO.jpg);
+				background-size: cover;
+			}
+
+			.contenedor h5{
+				font-weight: 800;
+			}
+
+			.contenedor{
+				width: 100vw;
+				height: 100vh;
+				text-align: center;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			.contenedor .botonera a{
+				background: linear-gradient(to bottom, #1A8FFB, #0681F1);
+				color: white;
+				font-weight: 600;
+				padding: 10px 20px;
+				border-radius: 5px;
+				box-shadow: 2px 2px 5px rgba(0,0,0,0.5)
+			}
+
+			.formulario{
+				width: 50% !important;
+			}
+
+			p{
+				margin: 0;
+				text-align: left;
+			}
+
+			input{
+				border: 1px solid #C4C4C4 !important;
+				font-size: 16px;
+				margin: 0;
+				height: 2rem !important;
+				background: white !important;
+				border-radius: 8px !important;
+				margin-bottom: 15px !important;
+				margin-top: 5px !important;
+				padding: 2px !important; 
+				display: block;  
+			}
+
+			input:focus{
+				box-shadow: none !important;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="contenedor">
+			<div class="formulario">
+				<form action="">
+					<p>Nombres y Apellidos</p>
+					<input type="text">
+
+					<p>Correo electronico</p>
+					<input type="text">
+
+
+					<p>D.N.I</p>
+					<input type="text">
+				</form>
+			</div>
+
+			<br>
+
+			<div class="botonera">
+				<a href="main.html" style="display: block">REGISTRARSE</a>
+			</div>
+		</div>
+	</body>
+</html>
